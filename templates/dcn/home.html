@@ -1,0 +1,473 @@
+{% extends "dcn/base.html" %}
+{% load static %}
+{% block content %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url({% static 'dcn/assets/img/slide/slide-1.jpg' %});">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>Welcome to <span>Segunfunmi Calos Ventures</span></h2>
+              <p>
+                  We make high quality concrete blocks and hold ourselves accountable to the highest standards in the industry. The quality, relibility, packaging and delivey of our products make us standout and unique from our competitors
+              </p>
+              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url({% static 'dcn/assets/img/slide/slide-2.jpg' %});">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>Our Vision</h2>
+              <p>To be  the leading supplier of block production in the state through unreserved commitment to quality services at best prices; maintenance of highest level professionalism, integrity and fairness in relating with customers.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url({% static 'dcn/assets/img/slide/slide-3.jpg' %});">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>Our Mission</h2>
+              <p>Our mission is to build a thriving business that will not only focus on profits but on providing solutions to building problems. We have modeled our business in such a way that it allows us easily adapt to innovation.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-left-arrow" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon bx bx-right-arrow" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+          	<div class="container" style="width: 100%;">
+		  		{% if messages %}
+		  			{% for msg in messages %}
+		  			<div class="alert alert-success">{{msg}}</div>
+		  			{% endfor %}
+
+		  		{% endif %}
+		  	</div>
+            <h3>Trust is just one of the things we build well.</h3>
+            <p> Our goal is to maintain highest level of professionalism, integrity and fairness in relating with our clients.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Request a quote</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about-us" class="about-us">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right"></div>
+          <div class="col-xl-7 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3 data-aos="fade-up">OUR PRODUCTS</h3>
+              <p data-aos="fade-up">
+                
+                Our products consist mainly of concrete blocks and bricks. They come in different sizes and shapes to meet the demands of our clients.
+
+              </p>
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="bx bx-receipt"></i>
+                  <h4>Strength and durability</h4>
+                  <p>
+                    Concrete blocks are strong, and they can stand the test of time. According to the World Business Council for Sustainable Development’s Cement Sustainability Initiative, concrete gets stronger over time and is not weakened by moisture, pests, or mold.
+                  </p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Affordable and sustainable</h4>
+                  <p>
+                     Oftentimes, environmentally friendly choices come with a hefty price tag. Concrete blocks remain affordable, and they are increasingly being embraced as an environmentally friendly choice. The raw materials used to produce concrete blocks are sustainable and recyclable.
+                  </p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bx bx-images"></i>
+                  <h4>Fire resistance</h4>
+                  <p>Where a wooden structure will quickly succumb to flames, a concrete block building can resist them and limit fire’s ability to spread quickly.</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-shield"></i>
+                  <h4>Custom colors and finishes</h4>
+                  <p>Today, concrete building blocks can be custom ordered to best meet your project’s requirements. Not only can you specify the color and finish, concrete blocks can be made in various shapes and sizes.</p>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Check out <strong>our services</strong></h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="fade-up">
+              <div class="icon"><i class="icofont-computer"></i></div>
+              <h4 class="title"><a href="">Manufacturing concrete blocks</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="icofont-layout" style="font-size:48px"></i></div>
+              <h4 class="title"><a href="">Manufacturing concrete slab</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="icofont-bricks" style="font-size:48px"></i></div>
+              <h4 class="title"><a href="">Manufacturing concrete bricks</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="icofont-image"></i></div>
+              <h4 class="title"><a href="">Manufacturing concrete</a></h4>
+              <p class="description">We make durable an relaible bricks that will last a generation.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="icofont-cement-mix" style="font-size:48px"></i></div>
+              <h4 class="title"><a href="">Dealer</a></h4>
+              <p class="description">Cements, sands, gravels, granites etc</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="icofont-truck-alt" style="font-size:48px"></i></div>
+              <h4 class="title"><a href="">Affordable Can and Truck Rental</a></h4>
+              <p class="description">Are you looking for a trustworthy, reliable, and professional moving van and truck rental agency? Moving to a new city or place and want an economical and budget truck rental service provider; or are you planning to transport your goods from one state to another? We got you covered with all sizes of vans and trucks suitable for moving small and large items, ranging from household and consumer goods, office equipment, home moving and office relocation, car transportation and heavy duty logistics.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <section style="height: 150px; padding: 0px; margin: 0px;" id="ctab" class="ctab">
+      <!-- <img src="assets/img/portfolio/portfolio-5.jpg"> -->
+      <div class="container" data-aos="zoom-in">
+        <center>
+          <strong style="margin: 20px 0px; font-size: 25px; padding-top: 35px; color: white;">Looking for quality Construction by Experienced Engineers?
+          </strong>
+          <a href="#" style="background-color: orange" class="btn btn-primary active" role="button" aria-pressed="true">CONTACT US NOW</a>
+        </center>
+      </div>
+    </section>
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Some of our <strong>recent works</strong></h2>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'dcn/assets/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="{% static 'dcn/assets/img/portfolio/portfolio-1.jpg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'dcn/assets/img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="{% static 'dcn/assets/img/portfolio/portfolio-2.jpg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'dcn/assets/img/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="{% static 'dcn/assets/img/portfolio/portfolio-3.jpg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="{% static 'dcn/assets/img/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="{% static 'dcn/assets/img/portfolio/portfolio-4.jpg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'dcn/assets/img/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="{% static 'dcn/assets/img/portfolio/portfolio-5.jpg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'dcn/assets/img/portfolio/portfolio-6.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="{% static 'dcn/assets/img/portfolio/portfolio-6.jpg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="{% static 'dcn/assets/img/portfolio/portfolio-7.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="{% static 'dcn/assets/img/portfolio/portfolio-7.jpg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="{% static 'dcn/assets/img/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="{% static 'dcn/assets/img/portfolio/portfolio-8.jpg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'dcn/assets/img/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="{% static 'dcn/assets/img/portfolio/portfolio-9.jpg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Our Clients Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="testimonial-item">
+              <img src="{% static 'dcn/assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+              <h3>Saul Goodman</h3>
+              <h4>Ceo &amp; Founder</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-item mt-4 mt-lg-0">
+              <img src="{% static 'dcn/assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+              <h3>Sara Wilsson</h3>
+              <h4>Designer</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-item mt-4">
+              <img src="{% static 'dcn/assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+              <h3>Jena Karlis</h3>
+              <h4>Store Owner</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-item mt-4">
+              <img src="{% static 'dcn/assets/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
+              <h3>Matt Brandon</h3>
+              <h4>Freelancer</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="testimonial-item mt-4">
+              <img src="{% static 'dcn/assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+              <h3>John Larson</h3>
+              <h4>Entrepreneur</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="testimonial-item mt-4">
+              <img src="{% static 'dcn/assets/img/testimonials/testimonials-6.jpg' %}" class="testimonial-img" alt="">
+              <h3>Emily Harison</h3>
+              <h4>Store Owner</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Eius ipsam praesentium dolor quaerat inventore rerum odio. Quos laudantium adipisci eius. Accusamus qui iste cupiditate sed temporibus est aspernatur. Sequi officiis ea et quia quidem.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Our Clients Section -->
+
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="row justify-content-center" data-aos="fade-up">
+
+          <div class="col-lg-10">
+
+            <div class="info-wrap">
+              <div class="row">
+                <div class="col-lg-4 info">
+                  <i class="icofont-google-map"></i>
+                  <h4>Location:</h4>
+                  <p>A108 Orelope Street<br>Owode Ede, Osogbo Osun State, Nigeria</p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0">
+                  <i class="icofont-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>glorioussegun@gmail.com<br>contact@example.com</p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0">
+                  <i class="icofont-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+1 5589 55488 51<br>+1 5589 22475 14</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row mt-5 justify-content-center" data-aos="fade-up">
+          <div class="col-lg-10">
+            <form action="{% url 'dcn-contact' %}" method="POST" role="form">
+            	{% csrf_token %}
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+{% endblock content %}
+  

@@ -1,0 +1,133 @@
+.sign_up {
+  /*background-color: #fff;*/
+	height: 680px;
+	width: 450px;
+  	border: 1px white;
+  	padding-top: 4px;
+  	margin: auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-group {
+  margin: 10px 5px;
+  padding: 10px 5px;
+}
+
+.bg-img {
+  background: url(../img/hero-bg.png) center bottom no-repeat;
+}
+
+.login {
+	height: 500px;
+	width: 450px;
+  	border: 1px white;
+  	padding-top: 40px;
+  	margin: auto;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.attend {
+	height: 600px;
+	width: 400px;
+  	border: 1px white;
+  	padding-top: 40px;
+  	margin: auto;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contain p{
+	font-size: 80px;
+	margin: auto;
+	color: red;
+}
+
+.signup_header {
+	margin: auto;
+}
+
+.signup_header p{ 
+	font-weight: bolder; 
+	text-align: center; 
+	font-size: 150px;
+}
+
+h1 {
+	font-family: "Poppins";
+	text-align: center;
+	font-size: 40px;
+	font-weight: bolder;
+}
+
+h2 {
+	font-family: "Poppins";
+	text-align: center;
+	font-size: 30px;
+	font-weight: bolder;
+  color: #fff;
+}
+
+h6 {
+	font-family: "Poppins";
+	text-align: center;
+	font-size: 20px;
+  color: #fff;
+  /*font-weight: bold;*/
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: #ff8f07;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  background-color: #ffbb6a;
+  color: black;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff9a1f;
+}
+
+div {
+  border-radius: 5px;
+  /*background-color: #f2f2f2;*/
+  padding: 20px;
+}
+
+.class {
+	height: 60px;
+}
