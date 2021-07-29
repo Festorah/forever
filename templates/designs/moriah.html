@@ -108,7 +108,7 @@
 				<div class="row">
 					<div class="col-lg-12 text-center">
 						<div class="title-box">
-							<h2>Jonas Pare <span> & </span> Karlene Hoard </h2>
+							<h2>{{ mywebsite.bride_name }} <span> & </span> {{ mywebsite.groom_name }} </h2>
 						</div>
 					</div>
 				</div>
@@ -118,7 +118,7 @@
 							<div class="col-lg-4 col-md-6 col-sm-12">
 								<div class="about-m">
 									<div class="about-img">
-										<img class="img-fluid" src="{% static 'samples/images/about-img-01.jpg' %}" alt="" />
+										<img class="img-fluid" src="{{ mywebsite.bride_image.url }}" alt="" />
 									</div>
 									<ul>
 										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -128,15 +128,15 @@
 								</div>
 							</div>
 							<div class="col-lg-8 col-md-6 col-sm-12">
-								<h2> <i class="fa fa-heart-o" aria-hidden="true"></i> <span>Jonas Pare</span> <i class="fa fa-heart-o" aria-hidden="true"></i></h2>
-								<p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum, suscipit sit amet auctor quis, vehicula ut leo. Maecenas felis nulla, tincidunt ac blandit a, consectetur quis elit. Nulla ut magna eu purus cursus sagittis. Praesent fermentum tincidunt varius. Proin sit amet tempus magna. Fusce pellentesque vulputate urna. </p>
+								<h2> <i class="fa fa-heart-o" aria-hidden="true"></i> <span>{{ mywebsite.bride_name }}</span> <i class="fa fa-heart-o" aria-hidden="true"></i></h2>
+								<p>{{ mywebsite.about_groom }} </p>
 							</div>
 						</div>
 						<div class="row align-items-center about-main-info">
 							<div class="col-lg-4 col-md-6 col-sm-12">
 								<div class="about-m">
 									<div class="about-img">
-										<img class="img-fluid" src="{% static 'samples/images/about-img-02.jpg' %}" alt="" />
+										<img class="img-fluid" src="{{ mywebsite.groom_image.url }}" alt="" />
 									</div>
 									<ul>
 										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -146,8 +146,8 @@
 								</div>
 							</div>
 							<div class="col-lg-8 col-md-6 col-sm-12">
-								<h2> <i class="fa fa-heart-o" aria-hidden="true"></i> <span>Karlene Hoard </span> <i class="fa fa-heart-o" aria-hidden="true"></i></h2>
-								<p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum, suscipit sit amet auctor quis, vehicula ut leo. Maecenas felis nulla, tincidunt ac blandit a, consectetur quis elit. Nulla ut magna eu purus cursus sagittis. Praesent fermentum tincidunt varius. Proin sit amet tempus magna. Fusce pellentesque vulputate urna. </p>
+								<h2> <i class="fa fa-heart-o" aria-hidden="true"></i> <span>{{ mywebsite.about_groom }} </span> <i class="fa fa-heart-o" aria-hidden="true"></i></h2>
+								<p>{{ mywebsite.about_bride }} </p>
 							</div>
 						</div>
 					</div>
@@ -182,13 +182,13 @@
 									<span>2017</span>
 								</div>
 								<div class="image">
-									<img src="{% static 'samples/images/time-01.jpg' %}" alt="" />
+									<img src="{{ mywebsite.gallery_1.url }}" alt="" />
 									<div class="title">
 										<h2>How we met <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
 									</div>
 								</div>
 								<div class="textContent">
-									<p class="lead">We met at the wedding of our close friends and immediately found a common language, so a year later our first date happened.</p>
+									<p class="lead">{{ mywebsite.how_we_met }}</p>
 								</div>
 							</div>
 						</div>
@@ -200,13 +200,13 @@
 									<span>2017</span>
 								</div>
 								<div class="image">
-									<img src="{% static 'samples/images/time-02.jpg' %}" alt="" />
+									<img src="{{ mywebsite.gallery_2.url }}" alt="" />
 									<div class="title">
 										<h2>First Outing <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
 									</div>
 								</div>
 								<div class="textContent">
-									<p class="lead">We met at the wedding of our close friends and immediately found a common language, so a year later our first date happened.</p>
+									<p class="lead">{{ mywebsite.first_outing }}</p>
 								</div>
 							</div>
 						</div>
@@ -218,13 +218,13 @@
 									<span>2017</span>
 								</div>
 								<div class="image">
-									<img src="{% static 'samples/images/time-03.jpg' %}" alt="" />
+									<img src="{{ mywebsite.gallery_3.url }}" alt="" />
 									<div class="title">
 										<h2>His Proposal <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
 									</div>
 								</div>
 								<div class="textContent">
-									<p class="lead">We met at the wedding of our close friends and immediately found a common language, so a year later our first date happened.</p>
+									<p class="lead">{{ mywebsite.proposal }}</p>
 								</div>
 							</div>
 						</div>
@@ -236,13 +236,13 @@
 									<span>2017</span>
 								</div>
 								<div class="image">
-									<img src="{% static 'samples/images/time-04.jpg' %}" alt="" />
+									<img src="{{ mywebsite.gallery_4.url }}" alt="" />
 									<div class="title">
 										<h2>Courtship <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
 									</div>
 								</div>
 								<div class="textContent">
-									<p class="lead">For 2 years of work as support engineer responsible about installing and maintenance SWIFT packages for banks. I gain a lot from it before i leave country.</p>
+									<p class="lead">{{ mywebsite.courtship }}</p>
 								</div>
 							</div>
 						</div>
@@ -254,13 +254,13 @@
 									<span>2017</span>
 								</div>
 								<div class="image">
-									<img src="{% static 'samples/images/time-05.jpg' %}" alt="" />
+									<img src="{{ mywebsite.gallery_5.url }}" alt="" />
 									<div class="title">
 										<h2>Together Forever <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
 									</div>
 								</div>
 								<div class="textContent">
-									<p class="lead">Since then i came to Austria as refugee far from my lovers and friends far a way escaping from wars and threats searching a new life that i didn't find until yet.</p>
+									<p class="lead">{{ mywebsite.together_forever }}</p>
 								</div>
 							</div>
 						</div>
@@ -301,9 +301,9 @@
                     <div class="serviceBox">
                         <div class="service-icon"><i class="flaticon-wedding"></i></div>
                         <h3 class="title">Wedding Ceremony </h3>
-						<h4>05 July 2017 at 9:30 pm</h4>
+						<h4>{{ mywebsite.wedding_date }} at {{ mywebsite.wedding_ceremony_time }}</h4>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur, deleniti eaque excepturi.
+                            {{ mywebsite.wedding_ceremony_venue }}
                         </p>
                     </div>
                 </div>
@@ -312,9 +312,9 @@
                     <div class="serviceBox">
                         <div class="service-icon"><i class="flaticon-reception-bell"></i></div>
                         <h3 class="title">Reception Ceremony </h3>
-						<h4>06 July 2017 at 10:30 pm</h4>
+						<h4>{{ mywebsite.wedding_date }} at {{ mywebsite.wedding_ceremony_time }}</h4>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur, deleniti eaque excepturi.
+                            {{ mywebsite.wedding_reception_venue }}
                         </p>
                     </div>
                 </div>
@@ -340,50 +340,50 @@
 			<div class="row">
 				<ul class="popup-gallery clearfix">
 					<li>
-						<a href="{% static 'samples/images/gallery-01.jpg' %}">
-							<img class="img-fluid" src="{% static 'samples/images/gallery-01.jpg' %}" alt="single image">
+						<a href="{{ mywebsite.gallery_1.url }}">
+							<img class="img-fluid" src="{{ mywebsite.gallery_1.url }}" alt="single image">
 							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 						</a>
 					</li>
 					<li>
-						<a href="images/gallery-02.jpg">
-							<img class="img-fluid" src="{% static 'samples/images/gallery-02.jpg' %}" alt="single image">
+						<a href="{{ mywebsite.gallery_2.url }}">
+							<img class="img-fluid" src="{{ mywebsite.gallery_2.url }}" alt="single image">
 							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 						</a>
 					</li>
 					<li>
-						<a href="images/gallery-03.jpg">
-							<img class="img-fluid" src="{% static 'samples/images/gallery-03.jpg' %}" alt="single image">
+						<a href="{{ mywebsite.gallery_3.url }}">
+							<img class="img-fluid" src="{{ mywebsite.gallery_3.url }}" alt="single image">
 							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 						</a>
 					</li>
 					<li>
-						<a href="images/gallery-04.jpg">
-							<img class="img-fluid" src="{% static 'samples/images/gallery-04.jpg' %}" alt="single image">
+						<a href="{{ mywebsite.gallery_4.url }}">
+							<img class="img-fluid" src="{{ mywebsite.gallery_4.url }}" alt="single image">
 							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 						</a>
 					</li>
 					<li>
-						<a href="images/gallery-05.jpg">
-							<img class="img-fluid" src="{% static 'samples/images/gallery-05.jpg' %}" alt="single image">
+						<a href="{{ mywebsite.gallery_5.url }}">
+							<img class="img-fluid" src="{{ mywebsite.gallery_5.url }}" alt="single image">
 							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 						</a>
 					</li>
 					<li>
-						<a href="images/gallery-06.jpg">
-							<img class="img-fluid" src="{% static 'samples/images/gallery-06.jpg' %}" alt="single image">
+						<a href="{{ mywebsite.gallery_6.url }}">
+							<img class="img-fluid" src="{{ mywebsite.gallery_6.url }}" alt="single image">
 							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 						</a>
 					</li>
 					<li>
-						<a href="images/gallery-07.jpg">
-							<img class="img-fluid" src="{% static 'samples/images/gallery-07.jpg' %}" alt="single image">
+						<a href="{{ mywebsite.bride_image.url }}">
+							<img class="img-fluid" src="{{ mywebsite.bride_image.url }}" alt="single image">
 							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 						</a>
 					</li>
 					<li>
-						<a href="images/gallery-08.jpg">
-							<img class="img-fluid" src="{% static 'samples/images/gallery-08.jpg' %}" alt="single image">
+						<a href="{{ mywebsite.groom_image.url }}">
+							<img class="img-fluid" src="{{ mywebsite.groom_image.url }}" alt="single image">
 							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 						</a>
 					</li>
@@ -410,7 +410,8 @@
 			<div class="row">
 				<div class="col-lg-12 col-sm-12 col-xs-12">
 				  <div class="contact-block">
-					<form id="contactForm">
+					<form class="forms-sample" action="{% url 'my-wedding-website' mywebsite.slug %}" method="POST">
+					{% csrf_token %}
 					  <div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
@@ -420,13 +421,13 @@
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+								<input type="text" placeholder="Your Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
 								<div class="help-block with-errors"></div>
 							</div> 
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<select class="custom-select d-block form-control" id="guest" required data-error="Please select an item in the list.">
+								<select class="custom-select d-block form-control" required name="number_of_guest" data-error="Please select an item in the list.">
 								  <option disabled selected>Number Of Guest*</option>
 								  <option value="1">1</option>
 								  <option value="2">2</option>
@@ -439,7 +440,7 @@
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<select class="custom-select d-block form-control" id="event" required data-error="Please select an item in the list.">
+								<select class="custom-select d-block form-control" id="event" name="attending" required data-error="Please select an item in the list.">
 								  <option disabled selected>I Am Attending*</option>
 								  <option value="1">All events</option>
 								  <option value="2">Wedding ceremony</option>
@@ -450,13 +451,11 @@
 						</div>
 						<div class="col-md-12">
 							<div class="form-group"> 
-								<textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
+								<textarea class="form-control" placeholder="Your Message" name="message" rows="8" data-error="Write your message" required></textarea>
 								<div class="help-block with-errors"></div>
 							</div>
 							<div class="submit-button text-center">
-								<button class="btn btn-common" id="submit" type="submit">Send Message</button>
-								<div id="msgSubmit" class="h3 text-center hidden"></div> 
-								<div class="clearfix"></div> 
+								<button class="btn btn-common" type="submit">Send Message</button>
 							</div>
 						</div>
 					  </div>            
@@ -481,12 +480,13 @@
                             </div>
                         </div>
                         <div class="bg-light p-2">
-                          <form action="" method="POST">
+                          <form action="{% url 'my-wedding-website' mywebsite.slug %}" method="POST">
+							{% csrf_token %}
                             <div class="d-flex flex-row align-items-start p-2">
                               <img class="rounded-circle" src="{% static 'samples/images/slider-01.jpg' %}" width="40" height="40">
-                              <input class="form-control p-2" id="name-input" type="text" name="name" placeholder="Your name" />
+                              <input class="form-control p-2" id="name-input" type="text" name="comment_name" placeholder="Your name" />
                             </div>
-                              <textarea name="message" class="form-control ml-1 shadow-none textarea p-2"></textarea>
+                              <textarea name="comment_message" class="form-control ml-1 shadow-none textarea p-2"></textarea>
                             <div class="mt-2 text-right"><button class="btn  btn-sm shadow-none" style="background-color: #890025; color: #fff;" type="submit">Post comment</button><button class="btn btn-sm ml-1 shadow-none" style="border-color: #890025; color: #333;" type="button">Cancel</button></div>
                           </form>
                         </div>

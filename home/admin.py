@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import WeddingProfileInfo
+# from .models import WeddingProfileInfo
 
 
-admin.site.register(WeddingProfileInfo)
+# admin.site.register(WeddingProfileInfo)

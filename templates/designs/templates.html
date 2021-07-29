@@ -1,0 +1,40 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block content %}
+
+<main id="main">
+
+    
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="padd-sectio pt-5">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center">
+
+          <h2>Latest designs</h2>
+          <p class="separator">Integer cursus bibendum augue ac cursus .</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+        {% for template in templates %}
+
+          <div class="col-md-6 col-lg-4">
+            <div class="block-blog text-left">
+              <a href="{% url 'template-sample-preview' template.slug %}"><img src="{{ template.image.url }}" alt="img"></a>
+              <div class="content-blog">
+                <h4><a href="#">{{ template.name }}</a></h4>
+                <h6>{{ template.description }}</h6>
+                <span>05, August 2021</span>
+                <a class="pull-right readmore" href="#">read more</a>
+              </div>
+            </div>
+          </div>
+         {% endfor %}
+
+        </div>
+      </div>
+    </section><!-- End Blog Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}

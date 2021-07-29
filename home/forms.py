@@ -2,7 +2,7 @@ from django import forms
 from django.forms import TextInput
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
-from .models import WeddingProfileInfo
+# from .models import WeddingProfileInfo
 
 class DateInput(forms.DateInput):
 	input_type = 'date'
@@ -48,35 +48,35 @@ class UserUpdateForm(forms.ModelForm):
 
 
 
-class WeddingProfileInfoForm(forms.ModelForm):
+# class WeddingProfileInfoForm(forms.ModelForm):
 
-	user_first_name = forms.CharField(
-		max_length=200,
-		required = True,
-		help_text='Enter Username',
-		widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Your First name'}),
-		)
-	user_partner_first_name = forms.CharField(
-		max_length=200,
-		required = True,
-		help_text='Enter Username',
-		widget=forms.TextInput(attrs={'class': 'form-control', "placeholder": "Your Partner's First name"}),
-		)
-	# wedding_date = forms.DateTimeField(
-	# 	help_text='Enter Password',
-	# 	required = True,
-	# 	widget=forms.DateInput(attrs={'class': 'form-control', 'placeholder': 'Your Wedding Date'}),
-	# 	)
-	location = forms.CharField(
-		max_length=200,
-		required = True,
-		help_text='Enter Username',
-		widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Location... E.g Lagos Nigeria'}),
-		)
+# 	user_first_name = forms.CharField(
+# 		max_length=200,
+# 		required = True,
+# 		help_text='Enter Username',
+# 		widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Your First name'}),
+# 		)
+# 	user_partner_first_name = forms.CharField(
+# 		max_length=200,
+# 		required = True,
+# 		help_text='Enter Username',
+# 		widget=forms.TextInput(attrs={'class': 'form-control', "placeholder": "Your Partner's First name"}),
+# 		)
+# 	# wedding_date = forms.DateTimeField(
+# 	# 	help_text='Enter Password',
+# 	# 	required = True,
+# 	# 	widget=forms.DateInput(attrs={'class': 'form-control', 'placeholder': 'Your Wedding Date'}),
+# 	# 	)
+# 	location = forms.CharField(
+# 		max_length=200,
+# 		required = True,
+# 		help_text='Enter Username',
+# 		widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Location... E.g Lagos Nigeria'}),
+# 		)
 
-	class Meta:
-		model = WeddingProfileInfo
-		fields = ['user_first_name', 'user_partner_first_name', 'wedding_date', 'location']
-		widgets = {
-		'wedding_date': DateInput(attrs={'class': 'form-control', 'placeholder': 'Your Wedding Date'}),
-	}
+# 	class Meta:
+# 		model = WeddingProfileInfo
+# 		fields = ['user_first_name', 'user_partner_first_name', 'wedding_date', 'location']
+# 		widgets = {
+# 		'wedding_date': DateInput(attrs={'class': 'form-control', 'placeholder': 'Your Wedding Date'}),
+# 	}
