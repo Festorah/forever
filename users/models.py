@@ -59,6 +59,22 @@ class MyWebsite(models.Model):
 			slugname = self.bride_name + ' and ' + self.groom_name
 			self.slug = slugify(slugname)
 		return super().save(*args, **kwargs)
+	
+	
+	@property
+	def bride_imageURL(self):
+		try:
+			url = self.bride_image.url
+		except:
+			url=''
+		return url
+	@property
+	def groom_imageURL(self):
+		try:
+			url = self.groom_image.url
+		except:
+			url=''
+		return url
 
 
 

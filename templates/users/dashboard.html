@@ -161,7 +161,7 @@
 
                                 <div class="form-group">
                                   <label for="exampleInputCity1">Bride's name</label>
-                                  <input type="text" name="bride_name" class="form-control" id="exampleInputCity1" 
+                                  <input type="text" name="bride_name" class="form-control" id="exampleInputCity1" value="{{ mywebsite.bride_name }}" 
                                   {% if mywebsite.bride_name != None %} 
                                     placeholder="{{ mywebsite.bride_name }}" 
                                   {% else %}
@@ -181,7 +181,12 @@
                                 </div>
                                 <div class="form-group">
                                   <label for="exampleTextarea1">Textarea</label>
-                                  <textarea class="form-control" id="exampleTextarea1" name="about_groom" rows="4" placeholder="Tell us what you like about him..."></textarea>
+                                  <textarea class="form-control" id="exampleTextarea1" name="about_groom" rows="4" value="{{ mywebsite.about_groom }}"
+                                  {% if mywebsite.about_groom != None %} 
+                                  placeholder="{{ mywebsite.about_groom }}" 
+                                  {% else %}
+                                   placeholder="Tell us what you like about him.."
+                                  {% endif %}></textarea>
                                 </div>
                                 <br>
                                 <button type="submit" class="btn btn-primary mr-2">Update</button>
@@ -197,7 +202,7 @@
 
                                 <div class="form-group">
                                   <label for="exampleInputCity1">Groom's name</label>
-                                  <input type="text" name="groom_name" class="form-control" id="exampleInputCity1" 
+                                  <input type="text" name="groom_name" class="form-control" id="exampleInputCity1" value="{{ mywebsite.groom_name }}" 
                                   {% if mywebsite.groom_name != None %} 
                                     placeholder="{{ mywebsite.groom_name }}" 
                                   {% else %}
@@ -217,7 +222,12 @@
                                 </div>
                                 <div class="form-group">
                                   <label for="exampleTextarea1">Textarea</label>
-                                  <textarea class="form-control" id="exampleTextarea1" name="about_bride" rows="4" placeholder="Tell us what you like about her..."></textarea>
+                                  <textarea class="form-control" id="exampleTextarea1" name="about_bride" rows="4" value="{{ mywebsite.about_bride }}"
+                                  {% if mywebsite.about_groom != None %} 
+                                  placeholder="{{ mywebsite.about_bride }}" 
+                                  {% else %}
+                                   placeholder="Tell us what you like about her..."
+                                  {% endif %}></textarea>
                                 </div>
                                 <br>
                                 <button type="submit" class="btn btn-primary mr-2">Update</button>
@@ -249,13 +259,18 @@
 
                     <div class="form-group">
                       <label for="exampleTextarea1">How we met</label>
-                      <textarea name="how_we_met" class="form-control" id="exampleTextarea1" placeholder="Tell us how you met eachother...Our templates comes handy here" rows="4"></textarea>
+                      <textarea name="how_we_met" class="form-control" id="exampleTextarea1" value="{{ mywebsite.how_we_met }}"
+                         {% if mywebsite.how_we_met != None %} 
+                          placeholder="{{ mywebsite.how_we_met }}" 
+                        {% else %}
+                         placeholder="how_we_met"
+                        {% endif %}></textarea>
                     </div>
 
 
                     <div class="form-group">
                       <label for="exampleTextarea1">First Outing</label>
-                      <textarea name="proposal" class="form-control" id="exampleTextarea1" placeholder="His Proposal...Our templates comes handy here" rows="4"></textarea>
+                      <textarea name="first_outing" class="form-control" id="exampleTextarea1" placeholder="first outing ...Our templates comes handy here" rows="4"></textarea>
                     </div>
 
 

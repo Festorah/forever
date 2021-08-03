@@ -71,7 +71,9 @@ def dashboard(request):
 					# context = {'form': form}
 					return render(request, 'users/dashboard.html')
 
-		if hero_images != None:
+		if hero_images != list() or wedding_date != None:
+			print(wedding_date)
+			print(hero_images)
 			mywebsite.wedding_date = wedding_date
 			n = len(hero_images)
 			for image in hero_images:
@@ -83,18 +85,24 @@ def dashboard(request):
 					mywebsite.hero_image_3 = image
 				n -= 1
 
-		if bride_name != '':
+		if bride_name != None:
 			mywebsite.bride_name = bride_name
 			print(bride_name)
 			mywebsite.bride_image = bride_image
 			mywebsite.about_groom = about_groom
+			print(about_groom)
 
-		if groom_name != '':
+		elif groom_name != None:
+			print(groom_name)
 			mywebsite.groom_name = groom_name
 			mywebsite.groom_image = groom_image
 			mywebsite.about_bride = about_bride
 
-		if how_we_met != '':
+		if how_we_met != None or first_outing != None:
+			# if how_we_met != '':
+			print(how_we_met)
+			print(first_outing)
+			print('good groom')
 			mywebsite.how_we_met = how_we_met
 			mywebsite.first_outing = first_outing
 			mywebsite.proposal = proposal
@@ -178,10 +186,9 @@ def my_preview(request):
 
 	name = mywebsite.web_design_template
 
-	temp_name = 'designs/' + name + '.html'
+	temp_name = 'designs/' + str(name) + '.html'
 
 	
-	# print(profile.registry)
 
 	context = {'mywebsite': mywebsite}
 
